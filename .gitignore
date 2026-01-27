@@ -1,0 +1,7 @@
+/backup
+
+*.md
+
+!*README*.md
+
+*.zip
