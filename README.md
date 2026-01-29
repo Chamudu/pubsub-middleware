@@ -9,7 +9,6 @@
 - [Implementation Tasks](#implementation-tasks)
 - [How to Run](#how-to-run)
 - [Concepts Explained](#concepts-explained)
-- [Video Recording Guide](#video-recording-guide)
 
 ---
 
@@ -31,7 +30,6 @@ This project implements a **Publish-Subscribe (Pub/Sub) Middleware** using socke
 
 ## 🎓 Learning Objectives
 
-By completing this assignment, you will learn:
 
 1. **Socket Programming Fundamentals**
    - TCP/IP communication
@@ -85,56 +83,6 @@ Publisher (NEWS) ────────┤         └──> Subscriber (NEWS
 
 ---
 
-## 🔧 Prerequisites
-
-### Required Software
-- **Python 3.8+** (Already installed on Windows)
-- **Command Prompt / PowerShell**
-- **Text Editor** (VS Code, PyCharm, or any editor)
-
-### Python Knowledge Required
-- Basic syntax (variables, functions, loops)
-- Classes and objects
-- Exception handling
-- File I/O
-
----
-
-## 📁 Project Structure
-
-```
-pubsub-middleware/
-│
-├── README.md                   # This file - comprehensive documentation
-├── LEARNING_NOTES.md          # Detailed concept explanations
-├── ARCHITECTURE_DESIGN.md     # Task 4 - Distributed architecture proposal
-│
-├── task1/
-│   ├── server.py              # Basic server implementation
-│   ├── client.py              # Basic client implementation
-│   └── README_TASK1.md        # Task 1 specific documentation
-│
-├── task2/
-│   ├── server.py              # Multi-client server with Pub/Sub
-│   ├── client.py              # Publisher/Subscriber client
-│   └── README_TASK2.md        # Task 2 specific documentation
-│
-├── task3/
-│   ├── server.py              # Topic-based filtering server
-│   ├── client.py              # Topic-aware client
-│   └── README_TASK3.md        # Task 3 specific documentation
-│
-├── utils/
-│   ├── constants.py           # Shared constants
-│   └── logger.py              # Logging utilities
-│
-└── screencasts/
-    ├── task1_demo.mp4         # Video demonstration for Task 1
-    ├── task2_demo.mp4         # Video demonstration for Task 2
-    └── task3_demo.mp4         # Video demonstration for Task 3
-```
-
----
 
 ## 🚀 Implementation Tasks
 
@@ -266,32 +214,6 @@ Publisher → "Here's new data!" → Server → Interested Subscribers
 
 ---
 
-## 🎥 Video Recording Guide
-
-### Task 1 Recording Checklist
-- [ ] Show server starting on port 5000
-- [ ] Show client connecting with IP and port
-- [ ] Type messages in client CLI
-- [ ] Show messages appearing on server CLI
-- [ ] Type "terminate" to close client
-- [ ] Show clean disconnection
-
-### Task 2 Recording Checklist
-- [ ] Start server
-- [ ] Start 2-3 Publishers
-- [ ] Start 2-3 Subscribers
-- [ ] Show Publishers typing messages
-- [ ] Show messages appearing ONLY on Subscribers
-- [ ] Demonstrate server displaying all activities
-
-### Task 3 Recording Checklist
-- [ ] Start server
-- [ ] Start Publishers with different topics (SPORTS, NEWS)
-- [ ] Start Subscribers with specific topic interests
-- [ ] Show topic-based message routing
-- [ ] Demonstrate message filtering (SPORTS → SPORTS only)
-
----
 
 ## 📚 Additional Resources
 
@@ -307,38 +229,3 @@ Publisher → "Here's new data!" → Server → Interested Subscribers
 - [Pub/Sub Pattern Explained](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern)
 - [Message Queue Systems](https://www.cloudamqp.com/blog/what-is-message-queuing.html)
 
----
-
-## 🏆 Grading Criteria
-
-| Task | Marks | Focus Area |
-|------|-------|------------|
-| Task 1 | 20/100 | Basic socket communication |
-| Task 2 | 30/100 | Concurrent connections + Pub/Sub roles |
-| Task 3 | 40/100 | Topic-based filtering |
-| Task 4 | 10/100 | Architecture design |
-
----
-
-## 📝 Notes for Learning
-
-- **Start simple**: Get Task 1 working perfectly before moving to Task 2
-- **Test incrementally**: Test each feature as you add it
-- **Use print statements**: Debug by printing connection states, messages, etc.
-- **Read error messages**: Python error messages are very helpful
-- **Commit often**: Save your progress with Git
-
----
-
-## 🤝 Team Collaboration Tips
-
-- **Divide tasks**: Different team members can work on client/server/documentation
-- **Code review**: Review each other's code before submission
-- **Test together**: Run integration tests with full team
-- **Practice demo**: Rehearse video recording before final submission
-
----
-
-**Good luck with your assignment! 🎓**
-
-*Last Updated: January 2026*
