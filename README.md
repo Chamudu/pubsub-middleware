@@ -158,14 +158,14 @@ Publisher (NEWS) ────────┤         └──> Subscriber (NEWS
 
 **Terminal 1 (Server):**
 ```bash
-cd "c:\Users\Chamudu Hansana\Desktop\Projects\pubsub-middleware\task1"
+cd task1
 python server.py 5000
 ```
 
 **Terminal 2 (Client):**
 ```bash
-cd "c:\Users\Chamudu Hansana\Desktop\Projects\pubsub-middleware\task1"
-python client.py 192.168.10.2 5000
+cd task1
+python client.py localhost 5000
 ```
 
 *(Detailed instructions for each task in respective README files)*
